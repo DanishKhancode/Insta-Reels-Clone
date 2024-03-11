@@ -1,0 +1,40 @@
+.login-container{
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    text-align: center;
+    flex-direction: row;
+}
+
+.login-card{
+    width:25rem;
+    height:18rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.bottom-card{
+    width:25rem;
+    border: 1px solid #ccc;
+ padding: 1rem;
+ margin-top: 1rem;
+}
+
+.insta-mob-bg{
+    background-image: url("../../assets/insta-mob-bg.png");
+    width:454px;
+    height:618px;
+    /* position: relative; */
+}
+
+.carousel{
+    height:auto;
+    position: absolute;
+    top: 50px;
+    left: 22px;
+    
+}
+
+
