@@ -17,7 +17,7 @@ import Image from "next/image";
 import HomeIcon from "@mui/icons-material/Home";
 import ExploreIcon from "@mui/icons-material/Explore";
 import { AuthContext } from "../context/auth";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import Link from "next/link";
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Logout"];
@@ -51,7 +51,7 @@ const ResponsiveAppBar = ({ userData }) => {
   };
 
   return (
-    <AppBar position="static" className="navbar">
+    <AppBar position="static" className="navbar" sx={{background:"white", overflowX:"hidden", width:"100vw" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -85,8 +85,10 @@ const ResponsiveAppBar = ({ userData }) => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }} className="nav-icons-container">
-            <HomeIcon fontSize="large" className="nav-icons" />
-            <ExploreIcon fontSize="large" className="nav-icons" />
+            <Link href="/" style={{cursor:"pointer"}}>
+            <HomeIcon fontSize="large" className="nav-icons" sx={{cursor: "pointer"}}/>
+            </Link>
+              {/* <ExploreIcon fontSize="large" className="nav-icons" /> */}
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar

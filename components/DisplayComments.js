@@ -46,9 +46,3 @@ function DisplayComments({ postData }) {
 }
 
 export default DisplayComments;
-
-
-// like -> 1point 
-// comment -> 2 points
-
-// ts-> like+CompositionEvent

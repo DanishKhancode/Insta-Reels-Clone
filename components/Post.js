@@ -81,7 +81,7 @@ function Post({ postData, userData }) {
         muted={isMute}
         onClick={handleMute}
         onEnded={handleNextVideo}
-        controls
+        // controls
       />
       <div className="videos-info">
         <div className="avatar-container">
@@ -93,14 +93,14 @@ function Post({ postData, userData }) {
           <p style={{ color: "white" }}>{postData.profileName}</p>
         </div>
         <div className="post-like">
-          <FavoriteIcon
+          <FavoriteIcon 
             style={like ? { color: "red" } : { color: "white" }}
             onClick={handleLike}
           />
           <p style={{ color: "white" }}>{postData.likes.length}</p>
           <AddCommentIcon
             onClick={handleClickOpen}
-            style={{ color: "white" }}
+            style={{ color: "blue", fontSize:"2rem", cursor:"pointer"}}
           />
           <Dialog
             open={open}
