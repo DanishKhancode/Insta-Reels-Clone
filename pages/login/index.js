@@ -1,7 +1,7 @@
 import React,{useContext, useEffect} from "react";
 import TextField from "@mui/material/TextField";
 import Image from "next/image";
-import logo from "../../assets/Instagram.jpeg";
+import logo from '../../assets/instagramlogo.png';
 import Button from "@mui/material/Button";
 import { Carousel } from "react-responsive-carousel";
 import bg1 from '../../assets/bg1.jpg'
