@@ -67,7 +67,7 @@ function Post({ postData, userData }) {
 
   const handleNextVideo = (e) => {
     //get the next video
-    let nextVideo = ReactDOM.findDOMNode(e.target).parentNode.nextSibling;
+    let nextVideo = ReactDOM.DOM(e.target).parentNode.nextSibling;
     if (nextVideo) {
       
       nextVideo.scrollIntoView({ behavior: "smooth" });

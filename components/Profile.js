@@ -58,8 +58,9 @@ function Profile() {
           </div>
         </div>
         <hr />
-        <div className="profile-posts">{userPosts.map(post => (
-          <video src={post.postURL}></video>
+        <div className="profile-posts">
+          {userPosts.map((post, index) => (
+          <video key={index} src={post.postURL}></video>
         ))}</div>
       </div>
     </div>

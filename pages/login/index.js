@@ -12,7 +12,7 @@ import bg5 from '../../assets/bg5.jpg'
 import { AuthContext } from '../../context/auth';
 import { useRouter } from "next/router";
 import Link from 'next/link'
-function index() {
+function Index() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [error, setError] = React.useState('');
@@ -113,7 +113,7 @@ function index() {
           </Button>
         </div>
         <div className="bottom-card">
-          Don't Have an account ?{" "}
+          Do not Have an account?
           <Link href="/signup">
             <span style={{ color: "blueviolet"  , cursor:"pointer"}}>Signup</span>
           </Link>
@@ -123,4 +123,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

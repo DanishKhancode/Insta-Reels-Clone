@@ -1,9 +1,9 @@
 import React from 'react'
-import Profile from '../components/Profile';
+import Profile1 from '../components/Profile';
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { AuthContext } from "../context/auth";
-function profile() {
+function Profile() {
   const { user } = useContext(AuthContext);
   const Redirect = () => {
     const router = useRouter();
@@ -13,11 +13,11 @@ function profile() {
     return (
       //this component will only be visible when we are logged in , so a protect route will be wrapped
       <>
-        {user?.uid ? <Profile/> : <Redirect/>}
+        {user?.uid ? <Profile1/> : <Redirect/>}
         
       </>
    
   )
 }
 
-export default profile
+export default Profile

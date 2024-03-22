@@ -24,9 +24,9 @@ function DisplayComments({ postData }) {
         <CircularProgress color="success" />
       ) : (
         <>
-          {allComments.map((commentObj) => {
+          {allComments.map((commentObj,index) => {
             return (
-              <div style={{ display: "flex" }}>
+              <div key={index} style={{ display: "flex" }}>
                 <Avatar src={commentObj.userDP} />
                 <p>
                   <span style={{ fontWeight: "bold" }}>
